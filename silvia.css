@@ -1,0 +1,134 @@
+.jumbotron {
+	background-color: #ade8d7;
+	color: #464642;
+	padding: 100px 25px;
+	text-align: center;
+	letter-spacing: 20px;
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.container-fluid {
+    padding: 30px 50px;
+}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #ade8d7;
+    z-index: 9999;
+    border: 0;
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+	color: #464642;
+	font-family: Palatino, Georgia, serif;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #ffffff !important;
+    background-color: #464642 !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #ffffff !important;
+} 
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #464642;
+}
+
+.item:hover .overlay {
+	opacity: 0.8;
+}
+
+.text {
+	color: #ffffff;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+	font-family: Palatino, Georgia, serif;
+}
+
+.img-responsive {
+    margin: 0 auto;
+	max-width: 100%;
+	height: auto;
+}
+
+.bg-grey {
+      background-color: #f6f6f6;
+  }
+
+.col-sm-4 {
+	padding: 50px;
+}
+  
+h2 {
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 30px;
+	letter-spacing: 3px;
+	color: #464642;
+	text-align: center;
+}
+
+h3 {
+	font-family: "Arial Black", Gadget, sans-serif;
+	color: #464642;
+}
+
+h4 {
+	letter-spacing: 2px;
+	color: #ffffff;
+}
+
+h5 {
+	letter-spacing: 1px;
+	color: #464642;
+	font-family: Palatino, Georgia, serif;
+	font-size: 20px;
+}
+
+p {
+	font-family: Palatino, Georgia, serif;
+	color: #464642;
+	font-size: 20px;
+}
+
+a {
+    color: #ffffff;
+}
+
+a:hover {
+	color: #464642;
+}
+
+footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #ade8d7;
+}
+
+hr {
+	height: 2px;
+	color: #ffffff;
+	background-color: #ffffff;
+	border: none;
+}
+
+img {
+	margin: 10px 10px 10px 10px;
+}
