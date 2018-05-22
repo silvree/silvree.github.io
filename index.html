@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Silvia George</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="silvia.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body id="main" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<!--NAVBAR-->
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			<span class="glyphicon glyphicon-menu-hamburger"></span>
+		  </button>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+		  <ul class="nav navbar-nav navbar-right">
+			<li><a href="#projects">Projects</a></li>
+			<li><a href="#otherwork">Other Work</a></li>
+		  </ul>
+		</div>
+	  </div>
+	</nav> 
+	
+	<div class="jumbotron">
+		<h4>Hi, I'm</h4>
+		<h1>SILVIA</h1>
+		<br><hr><br>
+		<h5>I'm a systems design engineering student at the University of Waterloo who is interested in growing as a designer.
+		<br>If you would like to get in touch, feel free to check out my <a href="docs/resume.pdf">resume</a> or connect on <a href='https://www.linkedin.com/in/silvia-george'>LinkedIn</a>.
+		<br><br>Check out some of my work below!
+		</h5>
+	</div>
+	
+	
+	<div id="projects" class="container-fluid">
+		<h2>PROJECTS</h2>
+		<br><br>
+		
+		<div class="col-sm-12">
+			<div class="item">
+				<a href="watoplan.html">
+					<img src="watoplan-thumb.jpg" class="img-responsive center-block" alt="WaToPlan">
+					<div class="overlay">
+						<div class="text"><strong>WaToPlan</strong></div>
+					</div>
+				</a>
+			</div>
+		</div>
+		
+		<div class="col-sm-12">
+			<h5 style="text-align:center;">...and more to come!</h5>
+		</div>
+		
+	</div>
+	
+	
+	<div id="otherwork" class="container-fluid bg-grey">
+		<h2>OTHER WORK</h2>
+		<br>
+
+		<div class="col-sm-4">
+			<div class="item">
+				<a href="elements.html">
+					<img src="elements-thumb.png" class="img-responsive center-block" alt="Elements">
+					<div class="overlay">
+						<div class="text"><strong>ELEMENTS</strong><br>animation</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		
+		<div class="col-sm-4">
+			<div class="item">
+				<a href="nearfar.html">
+					<img src="nearfar-thumb.png" class="img-responsive center-block" alt="Near & Far">
+					<div class="overlay">
+						<div class="text"><strong>NEAR & FAR</strong><br>animation</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		
+		<div class="col-sm-4">
+			<div class="item">
+				<a href="animelogo.html">
+					<img src="animelogo-thumb.png" class="img-responsive center-block" alt="Anime logo">
+					<div class="overlay">
+						<div class="text"><strong>ANIME CLUB</strong><br>logo design</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		
+	</div>
+	
+	<footer class="container-fluid text-center">
+		<a href="#main" title="To Top">
+			<span class="glyphicon glyphicon-chevron-up"></span>
+		</a>
+		<p>Website made from scratch by me :) </p> 
+	</footer> 
+
+</body>
+</html>
+
+<script>
+	$(document).ready(function(){
+	  // Add smooth scrolling to all links in navbar + footer link
+	  $(".navbar a, footer a[href='#main']").on('click', function(event) {
+
+	   // Make sure this.hash has a value before overriding default behavior
+	  if (this.hash !== "") {
+
+		// Prevent default anchor click behavior
+		event.preventDefault();
+
+		// Store hash
+		var hash = this.hash;
+
+		// Using jQuery's animate() method to add smooth page scroll
+		// The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+		$('html, body').animate({
+		  scrollTop: $(hash).offset().top
+		}, 900, function(){
+
+		  // Add hash (#) to URL when done scrolling (default click behavior)
+		  window.location.hash = hash;
+		  });
+		} // End if
+	  });
+	})
+</script> 
