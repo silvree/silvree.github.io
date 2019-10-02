@@ -95,9 +95,9 @@ img {
     margin-bottom: 0;
     background-color: #ffffff;
     z-index: 9999;
-    border: 0;
     font-size: 15px !important;
     line-height: 1.5 !important;
+	border: 0;
     border-radius: 0;
 	color: #464642;
 	font-family: 'Open Sans Condensed', sans-serif;
@@ -111,10 +111,20 @@ img {
 	border-left-color: #ade8d7;
 }
 
+.navbar-nav li a{
+	border: 0,0,0,5px;
+	border-left-style: solid;
+    border-color: #ffffff;
+}
+
 .navbar-default .navbar-toggle {
     border-color: transparent;
     color: #ade8d7 !important;
-} 
+}
+
+.navbar-toggle:hover {
+	background-color: #464642;
+}
 
 .overlay {
 	position: absolute;
@@ -127,6 +137,12 @@ img {
 	opacity: 0;
 	transition: .5s ease;
 	background-color: #464642;
+}
+
+.item {
+	height: 100%;
+	width: 100%;
+	position: relative;
 }
 
 .item:hover .overlay {
