@@ -22,25 +22,80 @@
 		</div>
 		<div class="collapse navbar-collapse" id="myNavbar">
 		  <ul class="nav navbar-nav navbar-right">
-			<li><a href="silvree.github.io#projects">PROJECTS</a></li>
-			<li><a href="silvree.github.io#otherwork">OTHER WORK</a></li>
+			<li><a href="index.html#design">CASE STUDIES</a></li>
+			<li><a href="index.html#other">OTHER WORK</a></li>
 		  </ul>
 		</div>
 	  </div>
 	</nav>
 	
-	<div class="container-fluid">
-		<br><br>
-		<div class="line-left">
-			<h2>Near & Far</h2>
-		</div>
+<!--CONTENT-->
+	<div class="container-fluid space-bottom space-top">
+		
 	
-		<div class="col-sm-6">
-			<img src="near.gif" class="img-responsive center-block" alt="Near animation" style="padding:50px;">
+		<div class="col-sm-4 infobox">
+			<div class="line-left">
+				<h4>Near & Far</h4>
+				<h6>Frame-by-frame animations</h6>
+			</div>
+			<p><strong>Date: </strong>2017</p>
+			<p><strong>Program: </strong>Adobe Animate</p>
+			<p><strong>Framerate: </strong>24 fps</p>
 		</div>
-		<div class="col-sm-6">
-			<img src="far.gif" class="img-responsive center-block" alt="Far animation" style="padding:50px;">
+		<div class="col-sm-8">
+			<img id="near_far" onclick="changeImage()" src="far.gif" class="img-responsive center-block" alt="Far animation" style="padding:50px;">
+			<p style="text-align: center;">Click the animation to swap between Near and Far!<p>
+			
+			<!-- TODO: get buttons to work -->
+			
+			<!-- <div class="btn-group" style="width:100%;"> -->
+				<!-- <button type="button" class="btn" style="width:50%;" onclick="changeImage()">Near</button> -->
+				<!-- <button type="button" class="btn" style="width:50%;" onclick="changeImage()">Far</button> -->
+			<!-- </div> -->
 		</div>
 	</div>
+	
+	<script>
+		function changeImage() {
+		  var image = document.getElementById('near_far');
+		  if (image.src.match("near")) {
+			image.src = "far.gif";
+			image.alt = "Far animation";
+			
+		  } else {
+			image.src = "near.gif";
+			image.alt = "Near animation";
+		  }
+		}
+		
+		<!-- function far() { -->
+			<!-- var image = document.getElementById('near_far'); -->
+			<!-- image.src = "far.gif"; -->
+			<!-- image.alt = "Far animation"; -->
+			
+			<!-- var near_button = document.getElementById('near_button'); -->
+			<!-- near_button.className = "btn unselected"; -->
+			
+			<!-- var far_button = document.getElementById('far_button'); -->
+			<!-- far_button.className = "btn selected"; -->
+			
+		<!-- } -->
+		
+		<!-- function near() { -->
+			<!-- var image = document.getElementById('near_far'); -->
+			<!-- image.src = "near.gif"; -->
+			<!-- image.alt = "Near animation"; -->
+			
+			<!-- var near_button = document.getElementById('near_button'); -->
+			<!-- near_button.classList.add(selected); -->
+			<!-- near_button.classList.remove(unselected); -->
+			
+			<!-- var far_button = document.getElementById('far_button'); -->
+			<!-- far_button.classList.add(unselected); -->
+			<!-- far_button.classList.remove(selected); -->
+			
+		<!-- } -->
+		
+	</script>
 	
 </html>
