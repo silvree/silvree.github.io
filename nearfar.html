@@ -43,7 +43,7 @@
 			<p><strong>Framerate: </strong>24 fps</p>
 		</div>
 		<div class="col-sm-8">
-			<img id="near_far" onclick="changeImage()" src="far.gif" class="img-responsive center-block" alt="Far animation" style="padding:50px;">
+			<img id="near_far" onclick="changeImage()" src="assets/far.gif" class="img-responsive center-block" alt="Far animation" style="padding:50px;">
 			<p style="text-align: center;">Click the animation to swap between Near and Far!<p>
 			
 			<!-- TODO: get buttons to work -->
@@ -59,42 +59,42 @@
 		function changeImage() {
 		  var image = document.getElementById('near_far');
 		  if (image.src.match("near")) {
-			image.src = "far.gif";
+			image.src = "assets/far.gif";
 			image.alt = "Far animation";
 			
 		  } else {
-			image.src = "near.gif";
+			image.src = "assets/near.gif";
 			image.alt = "Near animation";
 		  }
 		}
 		
-		<!-- function far() { -->
-			<!-- var image = document.getElementById('near_far'); -->
-			<!-- image.src = "far.gif"; -->
-			<!-- image.alt = "Far animation"; -->
+		 function far() { 
+			 var image = document.getElementById('near_far'); 
+			 image.src = "assets/far.gif"; 
+			 image.alt = "Far animation"; 
 			
-			<!-- var near_button = document.getElementById('near_button'); -->
-			<!-- near_button.className = "btn unselected"; -->
+			 var near_button = document.getElementById('near_button'); 
+			 near_button.className = "btn unselected"; 
 			
-			<!-- var far_button = document.getElementById('far_button'); -->
-			<!-- far_button.className = "btn selected"; -->
+			 var far_button = document.getElementById('far_button'); 
+			 far_button.className = "btn selected"; 
 			
-		<!-- } -->
+		 } 
 		
-		<!-- function near() { -->
-			<!-- var image = document.getElementById('near_far'); -->
-			<!-- image.src = "near.gif"; -->
-			<!-- image.alt = "Near animation"; -->
+		 function near() { 
+			 var image = document.getElementById('near_far'); 
+			 image.src = "assets/near.gif"; 
+			 image.alt = "Near animation"; 
 			
-			<!-- var near_button = document.getElementById('near_button'); -->
-			<!-- near_button.classList.add(selected); -->
-			<!-- near_button.classList.remove(unselected); -->
+			 var near_button = document.getElementById('near_button'); 
+			 near_button.classList.add(selected); 
+			 near_button.classList.remove(unselected); 
 			
-			<!-- var far_button = document.getElementById('far_button'); -->
-			<!-- far_button.classList.add(unselected); -->
-			<!-- far_button.classList.remove(selected); -->
+			 var far_button = document.getElementById('far_button'); 
+			 far_button.classList.add(unselected); 
+			 far_button.classList.remove(selected); 
 			
-		<!-- } -->
+		 } 
 		
 	</script>
 	
