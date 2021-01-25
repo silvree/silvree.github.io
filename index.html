@@ -5,43 +5,50 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300" rel="stylesheet"> 
+	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300" rel="stylesheet">  -->
 	<link rel="stylesheet" type="text/css" href="silvia.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,800;1,300;1,400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap" rel="stylesheet"> 
 </head>
 
-<body id="main" data-spy="scroll" data-target=".navbar" data-offset="60">
-
-<!--NAVBAR-->
-	<nav class="navbar navbar-default navbar-fixed-top">
-	  <div class="container">
-		<div class="navbar-header">
-		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-			<span class="glyphicon glyphicon-menu-hamburger"></span>
-		  </button>
-		</div>
-		<div class="collapse navbar-collapse" id="myNavbar">
-		  <ul class="nav navbar-nav navbar-right">
-			<li><a href="#design">CASE STUDIES</a></li>
-			<li><a href="#other">OTHER WORK</a></li>
-		  </ul>
-		</div>
-	  </div>
-	</nav> 
+<body id="main" data-spy="scroll" data-target=".navbar" data-offset="60"> 
 	
 <!--CONTENT-->
 	<div class="container-fluid">
-		<div class="line-left space-top">
-			<h5 class="special">&nbsp Hi, I'm</h5>
-			<h1>SILVIA</h1>
-			<br><br>
-			<h5>Thanks for stopping by! My name is Silvia and this is my portfolio. I'm a 3rd year systems design engineering student at the University of Waterloo who is interested in a lot of things, including <a href="assets/resume_design.pdf">design</a> and <a href="assets/resume_dev.pdf">development</a>.
-			<br><br>Feel free to contact me or connect on <a href=https://www.linkedin.com/in/silvia-george/>LinkedIn</a>.
-			<br><br>Check out some of my work below!
-			</h5>
+		<div class="line-left space-top row">
+			<div class="col-sm-6">
+				<h5 class="special">&nbsp Hi, I'm</h5>
+				<h1>SILVIA</h1>
+				<br><br>
+				<h5>Thanks for stopping by! My name is Silvia and this is my portfolio. I'm a 3rd year systems design engineering student at the University of Waterloo who is interested in a lot of things, including <a href="assets/resume_design.pdf">design</a> and <a href="assets/resume_dev.pdf">development</a>.
+				<br><br>Feel free to contact me or connect on <a href=https://www.linkedin.com/in/silvia-george/>LinkedIn</a>.
+				<br><br>Check out some of my work below!</h5>
+			</div>
+			<div class="col-sm-6">
+				<img src="assets/vector-silvia.svg" class="minime">
+			</div>
 		</div>
 	</div>
+
+<!--NAVBAR-->
+	<nav id="mainNavbar" class="navbar navbar-default">
+		<div class="container">
+		  <div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			  <span class="glyphicon glyphicon-menu-hamburger"></span>
+			</button>
+		  </div>
+		  <div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav navbar-center">
+			  <li><a href="#design">CASE STUDIES</a></li>
+			  <li><a href="#other">OTHER WORK</a></li>
+			</ul>
+		  </div>
+		</div>
+	  </nav>
 	
 	
 	<div id="design" class="container-fluid">
@@ -175,5 +182,22 @@
 		  });
 		} // End if
 	  });
+
+		// When the user scrolls the page, execute myFunction
+		window.onscroll = function() {addStickyClass()};
+
+		var navbar = document.getElementById("mainNavbar");
+		// Get the offset position of the navbar
+		var sticky = navbar.offsetTop;
+
+		// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+		function addStickyClass() {
+			if (window.pageYOffset >= sticky) {
+				navbar.classList.add("sticky");
+			} else {
+				navbar.classList.remove("sticky");
+			}
+		}
+
 	})
 </script> 
