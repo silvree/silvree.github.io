@@ -11,30 +11,49 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,800;1,300;1,400&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet"> 
 </head>
 
 <body id="main" data-spy="scroll" data-target=".navbar" data-offset="60"> 
+
+	<!--NAVBAR-->
+	<nav class="navbar navbar-default hidden-sm hidden-md hidden-lg sticky">
+		<div class="container">
+		  <div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			  <span class="glyphicon glyphicon-menu-hamburger"></span>
+			</button>
+		  </div>
+		  <div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav navbar-center">
+			  <li><a href="#design">CASE STUDIES</a></li>
+			  <li><a href="#other">OTHER WORK</a></li>
+			</ul>
+		  </div>
+		</div>
+	  </nav>
 	
 <!--CONTENT-->
-	<div class="container-fluid">
-		<div class="line-left space-top row">
-			<div class="col-sm-6">
+	<div class="container-fluid content">
+		<div class="line-left space-top row equal">
+			<div class="col-sm-8">
 				<h5 class="special">&nbsp Hi, I'm</h5>
 				<h1>SILVIA</h1>
-				<br><br>
+				<div class="hidden-lg hidden-md hidden-sm mini-line"><br></div>
+				<br>
 				<h5>Thanks for stopping by! My name is Silvia and this is my portfolio. I'm a 3rd year systems design engineering student at the University of Waterloo who is interested in a lot of things, including <a href="assets/resume_design.pdf">design</a> and <a href="assets/resume_dev.pdf">development</a>.
 				<br><br>Feel free to contact me or connect on <a href=https://www.linkedin.com/in/silvia-george/>LinkedIn</a>.
 				<br><br>Check out some of my work below!</h5>
 			</div>
-			<div class="col-sm-6">
+			<div class="col-sm-4 vertical-center">
 				<img src="assets/vector-silvia.svg" class="minime">
 			</div>
+			<div class="hidden-lg hidden-md hidden-sm mini-line"></div>
 		</div>
 	</div>
 
 <!--NAVBAR-->
-	<nav id="mainNavbar" class="navbar navbar-default">
+	<nav id="mainNavbar" class="navbar navbar-default hidden-xs">
 		<div class="container">
 		  <div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -51,11 +70,11 @@
 	  </nav>
 	
 	
-	<div id="design" class="container-fluid">
+	<div id="design" class="container-fluid content">
 	<div class="line-left space-top">
 		<h2>Case Studies</h2>
 	</div>
-		
+	<div class="hidden-lg hidden-md hidden-sm mini-line"></div>
 		<div class="col-sm-4">
 			<div class="item">
 				<a href="mapleleafcareers.html">
@@ -85,11 +104,11 @@
 	</div>
 	
 	
-	<div id="other" class="container-fluid">
+	<div id="other" class="container-fluid content">
 	<div class="line-left space-top">
 		<h2>Other Work</h2>
 	</div>
-	
+	<div class="hidden-lg hidden-md hidden-sm mini-line"></div>
 		<div class="col-sm-4">
 			<div class="item">
 				<a href="flightdecklogo.html">
