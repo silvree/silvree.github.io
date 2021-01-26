@@ -293,7 +293,7 @@ img {
 	}
 } 
 
-@media (max-width: 767px){
+@media (max-width: 768px){
 	.minime {
 		max-height: 100px;
 	}
@@ -302,7 +302,7 @@ img {
 		border-left: solid 0px #ade8d7;
 		padding-left: 0px;
 		margin-right: 0px;
-		margin-bottom: 50px;
+		margin-bottom: 0px;
 		margin-left: 0px;
 	}
 
@@ -327,7 +327,7 @@ img {
 		text-align: center;
 	}
 
-	h1, h2, h5 {
+	h1, h2, h3, h5 {
 		text-align: center;
 	}
 }
