@@ -11,14 +11,14 @@ h1 {
 h2 {
 	font-family: 'Nunito', sans-serif;
 	font-weight: 700;
-	font-size: 5rem;
+	font-size: 4rem;
 	color: #464642;
 }
 
 h3 {
 	font-family: 'Nunito', sans-serif;
 	font-weight: 700;
-	font-size: 3rem;
+	font-size: 2.5rem;
 	color: #6dbcac;
 	text-align: left;
 }
@@ -28,7 +28,7 @@ h4 {
 	font-weight: 700;
 	color: #464642;
 	text-align: left;
-	font-size: 5rem;
+	font-size: 3rem;
 }
 
 h5 {
@@ -82,7 +82,20 @@ img {
 	margin: 10px 10px 10px 10px;
 }
 
+ul {
+	padding-left: 18px;
+}
 
+.bullets > li {
+	font-family: 'Rubik', sans-serif;
+	font-weight: 300;
+	color: #464642;
+	font-size: 18px;
+}
+
+.col-sm-4 > h4 {
+	margin-top: 0;
+}
 
 .line-left {
 	border-left: solid 8px #ade8d7;
@@ -103,6 +116,12 @@ img {
     padding: 0px 10%;
 }
 
+.nav-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
 .navbar {
     margin-bottom: 0;
     background-color: #ffffff;
@@ -116,7 +135,7 @@ img {
 	font-weight: 400;
 	letter-spacing: 1pt;
 	position: sticky;
-	box-shadow: 0 5px 6px -6px grey;
+	box-shadow: 0 5px 6px -5px #aaaaaa;
 }
 
 .navbar-nav li a {
@@ -135,7 +154,7 @@ img {
 }
 
 .navbar-default .navbar-toggle {
-    border-color: transparent;
+    border: 2px solid transparent;
     color: #ade8d7 !important;
 }
 
@@ -146,6 +165,10 @@ img {
 .navbar-toggle:focus {
 	border-color:#ade8d7;
 	background-color: #ffffff !important;
+}
+
+.navbar-collapse {
+	padding: 0;
 }
 
 .overlay {
@@ -190,14 +213,19 @@ img {
 	height: auto;
 }
 
+/* .article-thumb {
+	max-width: 100px;
+} */
+
 .alternate {
     background-color: #f6f6f6;
 	padding: 10px;
-  }
-
-.col-sm-4 {
-	padding: 40px;
 }
+
+.gallery > .col-sm-4 {
+	padding: 4%;
+}
+
 .col-sm-3 {
 	padding: 10px;
 }
@@ -212,6 +240,10 @@ img {
 
 .space-top {
 	margin-top: 10rem;
+}
+
+.big-space-bottom {
+	margin-bottom: 5rem;
 }
 
 .infobox {
@@ -233,11 +265,11 @@ img {
 	width: 80%;
 }
 
-.navbar-nav.navbar-center {
+/* .navbar-nav.navbar-center {
     position: absolute;
     left: 50%;
     transform: translatex(-50%);
-}
+} */
 
 .sticky {
     position: fixed;
@@ -261,7 +293,7 @@ img {
 	/* position: relative; */
 }
 
-.equal {
+.equal-sm, .equal-md {
 	display: flex;
   	display: -webkit-flex;
   	flex-wrap: wrap;
@@ -271,6 +303,57 @@ img {
 	max-width: 1500px;
 }
 
+.card {
+	height: 100%;
+	width: 100%;
+	/* margin: 30px 0px; */
+	padding: 20px 30px;
+	border-radius: 10px;
+	box-shadow: 0 4px 6px -1px #aaaaaa;
+	position: relative;
+}
+
+.card p {
+	font-size: 14px;
+	text-align: center;
+}
+
+.card h4 {
+	font-size: 2.5rem;
+	text-align: center;
+}
+
+.btn-contain {
+	height: inherit;
+	width: inherit;
+	position: absolute;
+	top: 0;
+	left: 0;
+ 	display: flex;
+	padding-bottom: 20px;
+}
+
+.btn {
+	color: #6dbcac;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 400;
+	font-size: 1.2rem;
+	letter-spacing: 1pt;
+	padding: 10px 20px;
+	width: 100%;
+	border-width: 2px;
+	border-color: #ade8d7;
+	border-radius: 50px;
+	margin: 0 30px;
+	box-sizing: border-box;
+	align-self: flex-end;
+}
+
+.btn:hover {
+	border-color: #464642;
+	background-color: #464642;
+	color: white;
+}
 
 @media only screen and (max-width: 600px) {
 	p, h5 {
@@ -285,6 +368,13 @@ img {
 	h3 {
 		font-size: 20px;
 	}
+	h4 {
+		font-size: 16px;
+	}
+	.bullets > li {
+		font-size: 14px;
+	}
+
 	.container-fluid {
 		padding: 0px 20px;
 	}
@@ -293,7 +383,31 @@ img {
 	}
 } 
 
-@media (max-width: 768px){
+@media (max-width: 991px){
+	.equal-md {
+		display: block;
+	}
+	.btn {
+		width: 160px;
+	}
+	.btn-contain {
+		justify-content: flex-end;
+	}
+	.card {
+		margin-top: 2rem;
+	}
+	.card p {
+		font-size: 16px;
+		text-align: left;
+		margin-bottom: 1rem;
+		margin-right: 200px;
+	}
+	.card h4 {
+		text-align: left;
+	}
+}
+
+@media (max-width: 767px){
 	.minime {
 		max-height: 100px;
 	}
@@ -312,7 +426,7 @@ img {
 		align-items: center;
 	}
 	
-	.equal {
+	.equal-sm {
 		display: block;
 	}
 
@@ -329,5 +443,30 @@ img {
 
 	h1, h2, h3, h5 {
 		text-align: center;
+	}
+
+	.col-sm-4 > h4 {
+		margin-top: 2rem;
+	}
+
+	.btn {
+		max-width: 160px;
+	}
+	.btn-contain {
+		justify-content: center;
+	}
+
+	.card p {
+		font-size: 16px;
+		text-align: center;
+		margin-bottom: 5rem;
+		margin-right: 0;
+	}
+	.card h4 {
+		text-align: center;
+	}
+
+	.gallery > .col-sm-4 {
+		margin: 5% 20%;
 	}
 }

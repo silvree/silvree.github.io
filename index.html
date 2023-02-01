@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Silvia George</title>
+	<title>Silvia's Portfolio</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -12,23 +12,24 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,800;1,300;1,400&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
-	<link rel="shortcut icon" href="assets/vector-silvia.svg" type="image/x-icon" />
+	<link rel="shortcut icon" href="assets/vector-silvia.svg" type="image/x-icon">
 </head>
 
 <body id="main" data-spy="scroll" data-target=".navbar" data-offset="60"> 
 
-	<!--NAVBAR-->
+	<!--HAMBURGER NAVBAR-->
 	<nav class="navbar navbar-default hidden-sm hidden-md hidden-lg sticky">
 		<div class="container">
 		  <div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" onclick="this.blur();">
 			  <span class="glyphicon glyphicon-menu-hamburger"></span>
 			</button>
 		  </div>
 		  <div class="collapse navbar-collapse" id="myNavbar">
 			<ul class="nav navbar-nav navbar-center">
-			  <li><a href="#design">CASE STUDIES</a></li>
+			  <li><a href="#design">DESIGN PROJECTS</a></li>
 			  <li><a href="#other">OTHER WORK</a></li>
+			  <li><a href="#about">ABOUT ME</a></li>
 			</ul>
 		  </div>
 		</div>
@@ -36,15 +37,15 @@
 	
 <!--CONTENT-->
 	<div class="container-fluid content">
-		<div class="line-left space-top row equal">
+		<div class="line-left space-top row equal-sm">
 			<div class="col-sm-8">
 				<h5 class="special">&nbsp Hi, I'm</h5>
 				<h1>SILVIA</h1>
 				<div class="hidden-lg hidden-md hidden-sm mini-line"><br></div>
 				<br>
-				<h5>Thanks for stopping by! My name is Silvia and this is my portfolio. I'm a 3rd year systems design engineering student at the University of Waterloo who is interested in a lot of things, including <a href="assets/resume_design.pdf">design</a> and <a href="assets/resume_dev.pdf">development</a>.
+				<p>Thanks for stopping by! My name is Silvia and this is my portfolio. I recently graduated from systems design engineering at the University of Waterloo and am currently seeking employment. I'm interested in a lot of things, including <a href="assets/resume_design.pdf" target="_blank">design</a> and <a href="assets/resume_dev.pdf" target="_blank">development</a>.
 				<br><br>Feel free to contact me or connect on <a href=https://www.linkedin.com/in/silvia-george/>LinkedIn</a>.
-				<br><br>Check out some of my work below!</h5>
+				<br><br>Check out some of my work below!</p>
 			</div>
 			<div class="col-sm-4 vertical-center">
 				<img src="assets/vector-silvia.svg" class="minime">
@@ -53,30 +54,31 @@
 		</div>
 	</div>
 
-<!--NAVBAR-->
+<!--REGULAR NAVBAR-->
 	<nav id="mainNavbar" class="navbar navbar-default hidden-xs">
-		<div class="container">
-		  <div class="navbar-header">
+		<div class="container nav-container">
+		  <!-- <div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 			  <span class="glyphicon glyphicon-menu-hamburger"></span>
 			</button>
-		  </div>
-		  <div class="collapse navbar-collapse" id="myNavbar">
+		  </div> -->
+		  <!-- <div class="collapse navbar-collapse" id="myNavbar"> -->
 			<ul class="nav navbar-nav navbar-center">
-			  <li><a href="#design">CASE STUDIES</a></li>
+			  <li><a href="#design">DESIGN PROJECTS</a></li>
 			  <li><a href="#other">OTHER WORK</a></li>
+			  <li><a href="#about">ABOUT ME</a></li>
 			</ul>
-		  </div>
+		  <!-- </div> -->
 		</div>
-	  </nav>
+	</nav>
 	
 	
 	<div id="design" class="container-fluid content">
-	<div class="line-left space-top">
-		<h2>Case Studies</h2>
-	</div>
-	<div class="hidden-lg hidden-md hidden-sm mini-line"></div>
-		<div class="col-sm-4">
+		<div class="line-left space-top">
+			<h2>Design Projects</h2>
+		</div>
+	<div class="hidden-lg hidden-md hidden-sm mini-line space-bottom"></div>
+		<!-- <div class="col-sm-4">
 			<div class="item">
 				<a href="mapleleafcareers.html">
 					<img src="assets/thumbnails/mapleleafcareers.png" class="img-responsive center-block" alt="Maple Leaf Careers">
@@ -100,16 +102,83 @@
 		<div class="col-sm-12">
 			<br>
 			<h5 style="text-align:center;">...and more to come!</h5>
-		</div>
+		</div> -->
+
 		
+		<!-- <div class="row" >
+			<div class="col-sm-3 vertical-center">
+				<img src="assets/thumbnails/mapleleafcareers.png" class="center-block img-responsive" alt="Maple Leaf Careers">
+			</div>
+				
+			<div class="col-sm-9">
+			<div class="col-sm-12">
+				<a href="mapleleafcareers.html">
+					<h6>Maple Leaf Careers
+						<span class="glyphicon glyphicon-chevron-right"></span>
+					</h6>
+				</a>
+				<p>A small design exercise in applying company branding to a tablet interface for a job application portal.</p>
+			</div>
+		</div> -->
+
+
+		<div class="row equal-md" >
+
+			<div class="col-md-4">
+				<div class="card">
+					<!-- <img src="assets/thumbnails/mapleleafcareers.png" class="center-block img-responsive" alt="Maple Leaf Careers"> -->
+					<h4>UW Quest</h4>
+					<p class="big-space-bottom">Redesigning my school’s confusing course selection interface.</p>
+
+					<!-- btn-contain is a solution to the button not aligning within the card
+					however I think a better solution would be to make the card a flex container
+					and then make everything in it a flex item -->
+					<div class="btn-contain">
+						<a href="mapleleafcareers.html" class="btn btn-default" role="button">
+							READ MORE <span class="glyphicon glyphicon-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="card">
+					<!-- <img src="assets/thumbnails/mapleleafcareers.png" class="center-block img-responsive" alt="Maple Leaf Careers"> -->
+					<h4>Tonami</h4>
+					<p class="big-space-bottom">A mobile interface to help teach language learners how to pronounce tone.</p>
+					<div class="btn-contain">
+						<a href="mapleleafcareers.html" class="btn btn-default" role="button">
+							READ MORE <span class="glyphicon glyphicon-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="card">
+					<!-- <img src="assets/thumbnails/mapleleafcareers.png" class="center-block img-responsive" alt="Maple Leaf Careers"> -->
+					<h4>Maple Leaf Careers</h4>
+					<p class="big-space-bottom">A small design exercise in applying company branding to a tablet interface for a job application portal.</p>
+					<div class="btn-contain">
+						<a href="mapleleafcareers.html" class="btn btn-default" role="button">
+							READ MORE <span class="glyphicon glyphicon-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
 	</div>
 	
 	
-	<div id="other" class="container-fluid content">
+<div id="other" class="container-fluid content">
 	<div class="line-left space-top">
 		<h2>Other Work</h2>
 	</div>
-	<div class="hidden-lg hidden-md hidden-sm mini-line"></div>
+	<div class="hidden-lg hidden-md hidden-sm mini-line space-bottom"></div>
+
+	<div class="row gallery">
 		<div class="col-sm-4">
 			<div class="item">
 				<a href="flightdecklogo.html">
@@ -120,7 +189,7 @@
 				</a>
 			</div>
 		</div>
-	
+
 		<div class="col-sm-4">
 			<div class="item">
 				<a href="wifiposter.html">
@@ -131,7 +200,7 @@
 				</a>
 			</div>
 		</div>
-	
+
 		<div class="col-sm-4">
 			<div class="item">
 				<a href="elements.html">
@@ -142,7 +211,9 @@
 				</a>
 			</div>
 		</div>
-		
+	</div>
+	
+	<div class="row gallery">
 		<div class="col-sm-4">
 			<div class="item">
 				<a href="nearfar.html">
@@ -164,10 +235,33 @@
 				</a>
 			</div>
 		</div>
-		
+	</div>
+</div>
+
+	<div id="about" class="container-fluid content">
+		<div class="line-left space-top">
+			<h2>More About Me</h2>
+		</div>
+		<div class="hidden-lg hidden-md hidden-sm mini-line space-bottom"></div>
+		<div class="row">
+			<div class="col-sm-8">
+				<p>Thanks for scrolling this far! I know this website might seem a little messy - it's still a work in progress, and I am already following a plan to improve it.</p>
+				<p class="space-bottom">I have worked both as a developer and a designer and have a pretty unique background because of that. I enjoy roles where I get to work on a variety of things, although realistically there aren't a lot of positions that allow that. I'm a bit of a jack-of-all-trades, and I'm okay with that - it gives me fresh perspectives in everything I do.</p>
+			</div>
+			<div class="col-sm-4">
+				<h4 class="special">Things I like:</h4>
+				<ul class="bullets">
+					<li>animation & illustration</li>
+					<li>rock climbing</li>
+					<li>video games</li>
+					<li>knitting & crochet</li>
+					<li>birds</li>
+				</ul>
+			</div>
+		</div>
 	</div>
 	
-	<footer class="container-fluid text-center">
+	<footer class="container-fluid text-center space-top">
 		<a href="#main" title="To Top">
 			<span class="glyphicon glyphicon-chevron-up"></span>
 		</a>
