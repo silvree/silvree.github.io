@@ -222,7 +222,7 @@ ul {
 	padding: 10px;
 }
 
-.gallery > .col-sm-4 {
+.gallery > .col-sm-4, .gallery > .col-sm-6 {
 	padding: 4%;
 }
 
@@ -468,5 +468,9 @@ ul {
 
 	.gallery > .col-sm-4 {
 		margin: 5% 20%;
+	}
+
+	.gallery > .col-sm-6 {
+		margin: 5%;
 	}
 }
