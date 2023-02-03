@@ -53,168 +53,187 @@
 		</div>
 		
 
-		<h3>Motivation</h3>
-		<p><br>As part of a UI design course, I had to design an interface for an open-ended final project. I decided to redesign a part of Quest, my university’s administrative system – more specifically, its course selection interface and process. This idea was widely fuelled by my own experiences with the system. As one of its primary users, I could already pinpoint a variety of problems and frustrations with the UI, ranging from superficial unattractive design to more concerning issues such as confusing navigation. The website is in major need of a redesign in many aspects, though undertaking such a task would be too large to tackle for this project. Thus, the scope was narrowed to focus on the portions of the experience dedicated to adding courses, specifically for undergraduate students.</p>
-		<br>
+		<div class="article-body">
+			<h3>Motivation</h3>
+			<p><br>As part of a UI design course, I had to design an interface for an open-ended final project. I decided to redesign a part of Quest, my university’s administrative system – more specifically, its course selection interface and process. This idea was widely fuelled by my own experiences with the system. As one of its primary users, I could already pinpoint a variety of problems and frustrations with the UI, ranging from superficial unattractive design to more concerning issues such as confusing navigation. The website is in major need of a redesign in many aspects, though undertaking such a task would be too large to tackle for this project. Thus, the scope was narrowed to focus on the portions of the experience dedicated to adding courses, specifically for undergraduate students.</p>
+			<br>
 
-		<h3>User Requirements</h3>
-		<p><br>The problems with Quest could not be based solely on my personal opinions - requirements had to be further investigated with additional users to produce a more unbiased view of the system and pinpoint key areas to fix. User requirements were compiled using a combination of three methods:</p>
-		<ol>
-			<li>A user survey to collect large-scale data about opinions of Quest</li>
-			<li>User interviews to recount personal, detailed experiences and feelings from users</li>
-			<li>A task analysis of a commonly performed action in Quest: adding a course</li>
-		</ol>
-		<p>The most important insights gathered from the survey were, in summary:</p>
-		<ul>
-			<li>The most disliked aspect: “Things are hard to find”</li>
-			<li>The most desired features:
-				<ul>
-					<li>Course descriptions</li>
-					<li>A list of available courses</li>
-					<li>^ …it turns out these features already exist in Quest, but nobody knows about them</li>
-				</ul>
-			</li>
-			<li>72.7% strongly agree there are too many websites/resources that need to be referenced when selecting courses</li>
-		</ul>
-		<p>All 3 primary users that were interviewed:</p>
-		<ul>
-			<li>Do course selection on desktop/laptop, never mobile</li>
-			<li>Mix up “Enroll” and “Course Selection”</li>
-			<li>Get confused by the Quest interface</li>
-			<li>Use resources outside of Quest to help make choices</li>
-		</ul>
-		<p>Based on the user interviews, it seemed like the most common - yet still complicated – task performed in Quest was adding a course. To analyze the task, a task analysis tree was created, as shown in the following three slides. This tree was compiled using processes described in the interviews and by manually going through the task on Quest to confirm details. The task requires a lot of steps, seen visually from the width of the analysis tree.</p>
-		
-		<div class="container-fluid alternate">
-			<img src="assets/quest-tasktree.png" class="img-responsive center-block" alt="Quest - task tree for adding a course">
-		</div>
-		
-		<p>The requirement gathering methods allowed me to further narrow the project scope and focus specifically on the course adding process. The scope will also focus on a desktop UI rather than a mobile design.</p>
-		<p>The findings provide compelling evidence that Quest is in need of improvement due to its confusing nature. Elaborating on this, the current system likely has issues with its organization and navigation, and can benefit from simplification of processes.</p>
-		<p>Three main usability goals were created from the investigation process to serve as reference for the project:</p>
-		<ol>
-			<li><strong>Simplified process for adding courses:</strong> Is it easy to do?</li>
-			<li><strong>Less confusing interface:</strong> Is the navigation clear? Are features discoverable?</li>
-			<li><strong>Satisfaction:</strong> Do users like the new interface?</li>
-		</ol>
+			<h3>User Requirements</h3>
+			<p><br>The problems with Quest could not be based solely on my personal opinions - requirements had to be further investigated with additional users to produce a more unbiased view of the system and pinpoint key areas to fix. User requirements were compiled using a combination of three methods:</p>
+			<ol>
+				<li>A user survey to collect large-scale data about opinions of Quest</li>
+				<li>User interviews to recount personal, detailed experiences and feelings from users</li>
+				<li>A task analysis of a commonly performed action in Quest: adding a course</li>
+			</ol>
+			<p>The most important insights gathered from the survey were, in summary:</p>
+			<ul>
+				<li>The most disliked aspect: “Things are hard to find”</li>
+				<li>The most desired features:
+					<ul>
+						<li>Course descriptions</li>
+						<li>A list of available courses</li>
+						<li>^ …it turns out these features already exist in Quest, but nobody knows about them</li>
+					</ul>
+				</li>
+				<li>72.7% strongly agree there are too many websites/resources that need to be referenced when selecting courses</li>
+			</ul>
+			<p>All 3 primary users that were interviewed:</p>
+			<ul>
+				<li>Do course selection on desktop/laptop, never mobile</li>
+				<li>Mix up “Enroll” and “Course Selection”</li>
+				<li>Get confused by the Quest interface</li>
+				<li>Use resources outside of Quest to help make choices</li>
+			</ul>
+			<p>Based on the user interviews, it seemed like the most common - yet still complicated – task performed in Quest was adding a course. To analyze the task, a task analysis tree was created, as shown in the following three slides. This tree was compiled using processes described in the interviews and by manually going through the task on Quest to confirm details. The task requires a lot of steps, seen visually from the width of the analysis tree.</p>
+			
+			<div class="container-fluid alternate">
+				<img src="assets/quest-tasktree.png" class="img-responsive center-block" alt="Quest - task tree for adding a course">
+			</div>
+			<br>
+			
+			<p>The requirement gathering methods allowed me to further narrow the project scope and focus specifically on the course adding process. The scope will also focus on a desktop UI rather than a mobile design.</p>
+			<p>The findings provide compelling evidence that Quest is in need of improvement due to its confusing nature. Elaborating on this, the current system likely has issues with its organization and navigation, and can benefit from simplification of processes.</p>
+			<p>Three main usability goals were created from the investigation process to serve as reference for the project:</p>
+			<ol>
+				<li><strong>Simplified process for adding courses:</strong> Is it easy to do?</li>
+				<li><strong>Less confusing interface:</strong> Is the navigation clear? Are features discoverable?</li>
+				<li><strong>Satisfaction:</strong> Do users like the new interface?</li>
+			</ol>
 
 
-		<br>
-		<h3>Navigation Analysis + Simplification</h3>
-		<p><br>As suggested by the user requirements process, Quest’s navigation may be one of the root causes of its poor usability. Before beginning a redesign, the current navigation menu system was analysed, breaking it down into its base structures.</p>
-		<ul>
-			<li>Menu 1 contains high-level navigation elements, including two home buttons and a secret collapsible Menu 5.</li>
-			<li>Menus 2 (collapsible) and 4 (non-collapsible) contain secondary navigation specific to the current category (eg. Enroll).</li>
-			<li>Menu 3 allows for limited navigation between homepage categories.</li>
-			<li>Menu 5 (collapsible) only contains a broken button and the signout button.</li>
-		</ul>
-
-		<div class="container-fluid alternate">
-			<div class="row gallery">
-				<div class="col-sm-12">
-					<img src="assets/quest-menu.png" class="img-responsive center-block" alt="Quest - screenshot of the website's menus">
+			<br>
+			<h3>Navigation Analysis + Simplification</h3>
+			<p><br>As suggested by the user requirements process, Quest’s navigation may be one of the root causes of its poor usability. Before beginning a redesign, the current navigation menu system was analysed, breaking it down into its base structures.</p>
+			<div class="row">
+				<div class="col-sm-6">
+					<ul>
+						<li>Menu 1 contains high-level navigation elements, including two home buttons and a secret collapsible Menu 5.</li>
+						<li>Menus 2 (collapsible) and 4 (non-collapsible) contain secondary navigation specific to the current category (eg. Enroll).</li>
+						<li>Menu 3 allows for limited navigation between homepage categories.</li>
+						<li>Menu 5 (collapsible) only contains a broken button and the signout button.</li>
+					</ul>
 				</div>
-				<div class="col-sm-12">
-					<img src="assets/quest-menu-breakdown.jpg" class="img-responsive center-block" alt="Quest - sketch breaking down the website's many menus">
+
+				<div class="col-sm-6">
+					<div class="container-fluid alternate">
+						<div class="row gallery">
+							<div class="col-sm-12">
+								<img src="assets/quest-menu.png" class="img-responsive center-block" alt="Quest - screenshot of the website's menus">
+							</div>
+							<div class="col-sm-12">
+								<img src="assets/quest-menu-breakdown.jpg" class="img-responsive center-block" alt="Quest - sketch breaking down the website's many menus">
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
+			<br>
 
-		<p>As seen in the rough notes, the first idea I had to improve the navigation was to reduce the number of menus by combining them. I wanted to limit it to two non-collapsible menus, achievable by:</p>
-		<ul>
-			<li>Combining Menus 2+4, since there is significant overlap in their items</li>
-			<li>Combining collapsible Menu 5 into Menu 1, since it only has two items</li>
-			<li>Removing Menu 3 entirely, since users can return to the homepage at any time using Menu 1</li>
-		</ul>
-		<p>Rapid sketches were created of potential two-menu layouts, as shown below. The top-left layout was chosen for further prototyping due to its similarly to Quest’s original design, providing a sense of familiarity to returning users.</p>
+			<p>As seen in the rough notes, the first idea I had to improve the navigation was to reduce the number of menus by combining them. I wanted to limit it to two non-collapsible menus, achievable by:</p>
+			<ul>
+				<li>Combining Menus 2+4, since there is significant overlap in their items</li>
+				<li>Combining collapsible Menu 5 into Menu 1, since it only has two items</li>
+				<li>Removing Menu 3 entirely, since users can return to the homepage at any time using Menu 1</li>
+			</ul>
+			<p>Rapid sketches were created of potential two-menu layouts, as shown below. The top-left layout was chosen for further prototyping due to its similarly to Quest’s original design, providing a sense of familiarity to returning users.</p>
 
-		<div class="container-fluid alternate">
-			<img src="assets/quest-menu-sketches.jpg" class="img-responsive center-block" alt="Quest redesign - menu layout sketches">
-		</div>
+			<div class="container-fluid alternate">
+				<img src="assets/quest-menu-sketches.jpg" class="img-responsive center-block" alt="Quest redesign - menu layout sketches">
+			</div>
 
-		<br>
-		<h3>Prototyping</h3>
-		<p><br>I also sketched a storyboard to envision a user going through a new and improved Quest interface and perform course selection. The storyboard features both the user and some conceptual UI elements, emphasizing the impact that a streamlined interface has on the user’s experience. The user’s emotions were inspired by users in the interviews.</p>
-		<p>Some of the brainstormed UI improvements shown in the storyboard are a real-time course search and collapsible course descriptions. These features will hopefully allow users to browse for courses more easily, which aids in course selection decision-making and reduces the number of external websites that need to be visited.</p>
+			<br>
+			<h3>Prototyping</h3>
+			<p><br>I also sketched a storyboard to envision a user going through a new and improved Quest interface and perform course selection. The storyboard features both the user and some conceptual UI elements, emphasizing the impact that a streamlined interface has on the user’s experience. The user’s emotions were inspired by users in the interviews.</p>
 
-		<div class="container-fluid alternate">
-			<img src="assets/quest-storyboard.jpg" class="img-responsive center-block" alt="Quest redesign - storyboard">
-		</div>
+			<div class="container-fluid alternate">
+				<img src="assets/quest-storyboard.jpg" class="img-responsive center-block" alt="Quest redesign - storyboard">
+			</div>
+			<br>
 
-		<p>I then refined the redesign ideas by sketching a low-fidelity wireframe. It features:</p>
-		<ul>
-			<li>The simplified two-menu layout chosen earlier</li>
-			<li>“Course Selection” and “Enroll” combined into a single category to reduce confusion, as suggested by users</li>
-			<li>Collapsible course descriptions and a real-time course search bar, conceptualized in the storyboard</li>
-			<li>Scrolling combined with pagination on the course search page (10 courses per page)</li>
-			<li>A term dropdown on the left menu</li>
-		</ul>
+			<p>Some of the brainstormed UI improvements shown in the storyboard are a real-time course search and collapsible course descriptions. These features will hopefully allow users to browse for courses more easily, which aids in course selection decision-making and reduces the number of external websites that need to be visited.</p>
 
-		<div class="container-fluid alternate">
-			<img src="assets/quest-sketch.jpg" class="img-responsive center-block" alt="Quest redesign - concept sketches">
-		</div>
-
-		<p>A medium-fidelity wireframe was then created using Figma. More work was put into this than initially anticipated, and the pages were turned into a clickable prototype. You can try it out <a href="https://www.figma.com/proto/XHAPU9u3oUkyMJfXigebQN/SYDE-542?node-id=212%3A2312&scaling=scale-down-width&page-id=107%3A2&starting-point-node-id=212%3A2312&hotspot-hints=0&hide-ui=1" target="_blank">here</a>.</p>
-		<p>It is essentially a more polished version of the low-fidelity sketch, with a few small changes such as moving the term dropdown to the top right of the main content panel. The prototype allows you to add the course “SYDE 999” to the Spring 2022 term.</p>
-
-		<div class="container-fluid alternate">
-			<div class="row gallery">
+			<div class="row">
 				<div class="col-sm-6">
-					<img src="assets/quest-wireframe1.png" class="img-responsive center-block" alt="Quest - screenshot of the website's menus">
+					<p>I then refined the redesign ideas by sketching a low-fidelity wireframe. It features:</p>
+					<ul>
+						<li>The simplified two-menu layout chosen earlier</li>
+						<li>“Course Selection” and “Enroll” combined into a single category to reduce confusion, as suggested by users</li>
+						<li>Collapsible course descriptions and a real-time course search bar, conceptualized in the storyboard</li>
+						<li>Scrolling combined with pagination on the course search page (10 courses per page)</li>
+						<li>A term dropdown on the left menu</li>
+					</ul>
 				</div>
+
 				<div class="col-sm-6">
-					<img src="assets/quest-wireframe2.png" class="img-responsive center-block" alt="Quest - sketch breaking down the website's many menus">
+					<div class="container-fluid alternate">
+						<img src="assets/quest-sketch.jpg" class="img-responsive center-block" alt="Quest redesign - concept sketches">
+					</div>
 				</div>
 			</div>
-			<div class="row gallery">
-				<div class="col-sm-6">
-					<img src="assets/quest-wireframe-animation.gif" class="img-responsive center-block" alt="Quest - screenshot of the website's menus">
+			<br>
+
+			<p>A medium-fidelity wireframe was then created using Figma. More work was put into this than initially anticipated, and the pages were turned into a clickable prototype. You can try it out <a href="https://www.figma.com/proto/XHAPU9u3oUkyMJfXigebQN/SYDE-542?node-id=212%3A2312&scaling=scale-down-width&page-id=107%3A2&starting-point-node-id=212%3A2312&hotspot-hints=0&hide-ui=1" target="_blank">here</a>.</p>
+			<p>It is essentially a more polished version of the low-fidelity sketch, with a few small changes such as moving the term dropdown to the top right of the main content panel. The prototype allows you to add the course “SYDE 999” to the Spring 2022 term.</p>
+
+			<div class="container-fluid alternate">
+				<div class="row gallery">
+					<div class="col-sm-6">
+						<img src="assets/quest-wireframe1.png" class="img-responsive center-block" alt="Quest - screenshot of the website's menus">
+					</div>
+					<div class="col-sm-6">
+						<img src="assets/quest-wireframe2.png" class="img-responsive center-block" alt="Quest - sketch breaking down the website's many menus">
+					</div>
 				</div>
-				<div class="col-sm-6">
-					<img src="assets/quest-wireframe3.png" class="img-responsive center-block" alt="Quest - sketch breaking down the website's many menus">
+				<div class="row gallery">
+					<div class="col-sm-6">
+						<img src="assets/quest-wireframe-animation.gif" class="img-responsive center-block" alt="Quest - screenshot of the website's menus">
+					</div>
+					<div class="col-sm-6">
+						<img src="assets/quest-wireframe3.png" class="img-responsive center-block" alt="Quest - sketch breaking down the website's many menus">
+					</div>
 				</div>
 			</div>
+
+			<br>
+			<h3>Testing</h3>
+			<p><br>I decided to test the prototype instead of first creating a high-fidelity mockup, since the goals of this redesign focused on base usability rather than polished visuals. Although the initial plan was to do cognitive user walkthroughs, the Figma wireframe ended up being complex enough for more solid task-based testing, which better suited performance testing. In other words – it was “functional” enough that it could be used to simulate a task and collect metrics to evaluate the design before moving onto design refinement.</p>
+			<p>Benchmarks for testing were created based on the project’s usability goals: </p>
+			<ol>
+				<li><strong>Simplified process</strong> (quantitative)
+					<ol>
+						<li>Time: all users must take less than 2 minutes to add a course</li>
+						<li>Number of steps/clicks: must not be more than the current system</li>
+					</ol>
+				</li>
+				<li><strong>Less confusing</strong> (quantitative)
+					<ol>
+						<li>Errors: all users should only make a maximum of one navigation error</li>
+					</ol>
+				</li>
+				<li><strong>Satisfaction</strong> (qualitative)
+					<ol>
+						<li>All users must prefer the new interface over the old one</li>
+						<li>The new interface should get better scores than the original Quest survey when it comes to aspects that are liked/disliked</li>
+						<li>Task satisfaction should be ranked 4 or 5 by all users (on a 5-point scale)</li>
+					</ol>
+				</li>
+			</ol>
+			<p>Three primary users were recruited for this testing, which involved giving them the prototype and asking them to add the fictional course “SYDE 999” to their Spring 2022 term. Metrics like task timing and error counting were collected, as well as satisfaction ratings in a follow-up survey. In general, users performed well on the tasks, and seemed to enjoy using the interface. The follow-up survey revealed that no aspects of the new interface were disliked, and that all users preferred the new interface to the old one. Overall, the prototype passed all of the set benchmarks.</p>
+
+			<br>
+			<h3>Design Refinement</h3>
+			<p><br>Since the prototype passed the performance test, it was a good indication that the design idea is a step in the right direction and could thus be explored further instead of returning to an earlier design stage. A visual mockup of a higher-fidelity design was created based on the medium-fidelity one.</p>
+			<p>Colour was introduced to the greyscale mockups sparingly, mostly used to draw attention to specific elements of the interface. For example, courses that were added but not yet saved are displayed in yellow to stand out from the rest of the list, indicating to the user that something had to be done. Red and green were used to indicate failures and successes at a glance. Yellow and black come from <a href="https://uwaterloo.ca/brand/how-express-waterloos-brand/colour">UW’s official colour branding</a>, since Quest is a UW website and should reflect some aspect of that. Overall, colour is meant to enhance the experience, but is not essential to it - a colourblind person should still be able to use the interface given the rest of the design elements.</p>
+			<div class="container-fluid alternate">
+				<img src="assets/quest-refined.png" class="img-responsive center-block" alt="Quest redesign - refined mockup">
+			</div>
+
+			<!-- <br>
+			<h3>Conclusions</h3>
+			<p><br>W.I.P.</p> -->
+
+			<br><br>
 		</div>
-
-		<br>
-		<h3>Testing</h3>
-		<p><br>I decided to test the prototype instead of first creating a high-fidelity mockup, since the goals of this redesign focused on base usability rather than polished visuals. Although the initial plan was to do cognitive user walkthroughs, the Figma wireframe ended up being complex enough for more solid task-based testing, which better suited performance testing. In other words – it was “functional” enough that it could be used to simulate a task and collect metrics to evaluate the design before moving onto design refinement.</p>
-		<p>Benchmarks for testing were created based on the project’s usability goals: </p>
-		<ol>
-			<li>Simplified process (quantitative)
-				<ol>
-					<li>Time: all users must take less than 2 minutes to add a course</li>
-					<li>Number of steps/clicks: must not be more than the current system</li>
-				</ol>
-			</li>
-			<li>Less confusing (quantitative)
-				<ol>
-					<li>Errors: all users should only make a maximum of one navigation error</li>
-				</ol>
-			</li>
-			<li>Satisfaction (qualitative)
-				<ol>
-					<li>All users must prefer the new interface over the old one</li>
-					<li>The new interface should get better scores than the original Quest survey when it comes to aspects that are liked/disliked</li>
-					<li>Task satisfaction should be ranked 4 or 5 by all users (on a 5-point scale)</li>
-				</ol>
-			</li>
-		</ol>
-		<p>Three primary users were recruited for this testing, which involved giving them the prototype and asking them to add the fictional course “SYDE 999” to their Spring 2022 term. Metrics like task timing and error counting were collected, as well as satisfaction ratings in a follow-up survey. In general, users performed well on the tasks, and seemed to enjoy using the interface. The follow-up survey revealed that no aspects of the new interface were disliked, and that all users preferred the new interface to the old one. Overall, the prototype passed all of the set benchmarks.</p>
-
-		<br>
-		<h3>Design Refinement</h3>
-		<p><br>Since the prototype passed the performance test, it was a good indication that the design idea is a step in the right direction and could thus be explored further instead of returning to an earlier design stage. A visual mockup of a higher-fidelity design was created based on the medium-fidelity one.</p>
-		<p>Colour was introduced to the greyscale mockups sparingly, mostly used to draw attention to specific elements of the interface. For example, courses that were added but not yet saved are displayed in yellow to stand out from the rest of the list, indicating to the user that something had to be done. Red and green were used to indicate failures and successes at a glance. Yellow and black come from <a href="https://uwaterloo.ca/brand/how-express-waterloos-brand/colour">UW’s official colour branding</a>, since Quest is a UW website and should reflect some aspect of that. Overall, colour is meant to enhance the experience, but is not essential to it - a colourblind person should still be able to use the interface given the rest of the design elements.</p>
-		<div class="container-fluid alternate">
-			<img src="assets/quest-refined.png" class="img-responsive center-block" alt="Quest redesign - refined mockup">
-		</div>
-
-		<!-- <br>
-		<h3>Conclusions</h3>
-		<p><br>W.I.P.</p> -->
-
-		<br><br>
 	</div>
 	
 </html>

@@ -82,7 +82,14 @@ img {
 	margin: 10px 10px 10px 10px;
 }
 
-ul {
+.article-body li {
+	font-family: 'Rubik', sans-serif;
+	font-weight: 300;
+	color: #464642;
+	font-size: 18px;
+}
+
+.bullets ul {
 	padding-left: 18px;
 }
 
