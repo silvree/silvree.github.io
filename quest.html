@@ -26,7 +26,7 @@
 		</div>
 		<div class="collapse navbar-collapse" id="myNavbar">
 		  <ul class="nav navbar-nav navbar-right">
-			<li><a href="index.html#design">CASE STUDIES</a></li>
+			<li><a href="index.html#design">DESIGN PROJECTS</a></li>
 			<li><a href="index.html#other">OTHER WORK</a></li>
 			<li><a href="index.html#about">ABOUT ME</a></li>
 		  </ul>
@@ -40,10 +40,6 @@
 		<div class="article-head">
 			<div class="space-top"></div>
 
-			<div class="alert alert-warning">
-				<strong>NOTE:</strong> This page is almost done, but is still a work-in-progress. You may see changes if you check back soon!
-			</div>
-
 			<div class="line-left">
 				<h5 class="special">Conceptual redesign:</h5> 
 				<h2>UW Quest</h2>
@@ -54,52 +50,64 @@
 		
 
 		<div class="article-body">
-			<h3>Motivation</h3>
-			<p><br>As part of a UI design course, I had to design an interface for an open-ended final project. I decided to redesign a part of Quest, my university’s administrative system – more specifically, its course selection interface and process. This idea was widely fuelled by my own experiences with the system. As one of its primary users, I could already pinpoint a variety of problems and frustrations with the UI, ranging from superficial unattractive design to more concerning issues such as confusing navigation. The website is in major need of a redesign in many aspects, though undertaking such a task would be too large to tackle for this project. Thus, the scope was narrowed to focus on the portions of the experience dedicated to adding courses, specifically for undergraduate students.</p>
-			<br>
+			<!-- <div class="row"> -->
+				<!-- <div class="col-sm-2"> -->
+					<h3>Motivation</h3>
+				<!-- </div> -->
+				<!-- <div class="col-sm-10"> -->
+					<p><br>As part of a UI design course, I had to design an interface for an open-ended final project. I decided to redesign a part of Quest, my university’s administrative system – more specifically, its course selection interface and process. This idea was widely fuelled by my own experiences with the system. As one of its primary users, I could already pinpoint a variety of problems and frustrations with the UI, ranging from superficial unattractive design to more concerning issues such as confusing navigation. The website is in major need of a redesign in many aspects, though undertaking such a task would be too large to tackle for this project. Thus, the scope was narrowed to focus on the portions of the experience dedicated to adding courses, specifically for undergraduate students.</p>
+					<br>
+				<!-- </div> -->
+			<!-- </div> -->
 
-			<h3>User Requirements</h3>
-			<p><br>The problems with Quest could not be based solely on my personal opinions - requirements had to be further investigated with additional users to produce a more unbiased view of the system and pinpoint key areas to fix. User requirements were compiled using a combination of three methods:</p>
-			<ol>
-				<li>A user survey to collect large-scale data about opinions of Quest</li>
-				<li>User interviews to recount personal, detailed experiences and feelings from users</li>
-				<li>A task analysis of a commonly performed action in Quest: adding a course</li>
-			</ol>
-			<p>The most important insights gathered from the survey were, in summary:</p>
-			<ul>
-				<li>The most disliked aspect: “Things are hard to find”</li>
-				<li>The most desired features:
+			<!-- <div class="row"> -->
+				<!-- <div class="col-sm-2"> -->
+					<h3>User Requirements</h3>
+				<!-- </div> -->
+
+				<!-- <div class="col-sm-10"> -->
+					<p><br>The problems with Quest could not be based solely on my personal opinions - requirements had to be further investigated with additional users to produce a more unbiased view of the system and pinpoint key areas to fix. User requirements were compiled using a combination of three methods:</p>
+					<ol>
+						<li>A user survey to collect large-scale data about opinions of Quest</li>
+						<li>User interviews to recount personal, detailed experiences and feelings from users</li>
+						<li>A task analysis of a commonly performed action in Quest: adding a course</li>
+					</ol>
+					<p>The most important insights gathered from the survey were, in summary:</p>
 					<ul>
-						<li>Course descriptions</li>
-						<li>A list of available courses</li>
-						<li>^ …it turns out these features already exist in Quest, but nobody knows about them</li>
+						<li>The most disliked aspect: “Things are hard to find”</li>
+						<li>The most desired features:
+							<ul>
+								<li>Course descriptions</li>
+								<li>A list of available courses</li>
+								<li>^ …it turns out these features already exist in Quest, but nobody knows about them</li>
+							</ul>
+						</li>
+						<li>72.7% strongly agree there are too many websites/resources that need to be referenced when selecting courses</li>
 					</ul>
-				</li>
-				<li>72.7% strongly agree there are too many websites/resources that need to be referenced when selecting courses</li>
-			</ul>
-			<p>All 3 primary users that were interviewed:</p>
-			<ul>
-				<li>Do course selection on desktop/laptop, never mobile</li>
-				<li>Mix up “Enroll” and “Course Selection”</li>
-				<li>Get confused by the Quest interface</li>
-				<li>Use resources outside of Quest to help make choices</li>
-			</ul>
-			<p>Based on the user interviews, it seemed like the most common - yet still complicated – task performed in Quest was adding a course. To analyze the task, a task analysis tree was created, as shown in the following three slides. This tree was compiled using processes described in the interviews and by manually going through the task on Quest to confirm details. The task requires a lot of steps, seen visually from the width of the analysis tree.</p>
-			
-			<div class="container-fluid alternate">
-				<img src="assets/quest-tasktree.png" class="img-responsive center-block" alt="Quest - task tree for adding a course">
-			</div>
-			<br>
-			
-			<p>The requirement gathering methods allowed me to further narrow the project scope and focus specifically on the course adding process. The scope will also focus on a desktop UI rather than a mobile design.</p>
-			<p>The findings provide compelling evidence that Quest is in need of improvement due to its confusing nature. Elaborating on this, the current system likely has issues with its organization and navigation, and can benefit from simplification of processes.</p>
-			<p>Three main usability goals were created from the investigation process to serve as reference for the project:</p>
-			<ol>
-				<li><strong>Simplified process for adding courses:</strong> Is it easy to do?</li>
-				<li><strong>Less confusing interface:</strong> Is the navigation clear? Are features discoverable?</li>
-				<li><strong>Satisfaction:</strong> Do users like the new interface?</li>
-			</ol>
-
+					<p>All 3 primary users that were interviewed:</p>
+					<ul>
+						<li>Do course selection on desktop/laptop, never mobile</li>
+						<li>Mix up “Enroll” and “Course Selection”</li>
+						<li>Get confused by the Quest interface</li>
+						<li>Use resources outside of Quest to help make choices</li>
+					</ul>
+					<p>Based on the user interviews, it seemed like the most common - yet still complicated – task performed in Quest was adding a course. To analyze the task, a task analysis tree was created, as shown in the following three slides. This tree was compiled using processes described in the interviews and by manually going through the task on Quest to confirm details. The task requires a lot of steps, seen visually from the width of the analysis tree.</p>
+					
+					<div class="container-fluid alternate">
+						<img src="assets/quest-tasktree.png" class="img-responsive center-block" alt="Quest - task tree for adding a course">
+					</div>
+					<br>
+					
+					<p>The requirement gathering methods allowed me to further narrow the project scope and focus specifically on the course adding process. The scope will also focus on a desktop UI rather than a mobile design.</p>
+					<p>The findings provide compelling evidence that Quest is in need of improvement due to its confusing nature. Elaborating on this, the current system likely has issues with its organization and navigation, and can benefit from simplification of processes.</p>
+					<p>Three main usability goals were created from the investigation process to serve as reference for the project:</p>
+					<ol>
+						<li><strong>Simplified process for adding courses:</strong> Is it easy to do?</li>
+						<li><strong>Less confusing interface:</strong> Is the navigation clear? Are features discoverable?</li>
+						<li><strong>Satisfaction:</strong> Do users like the new interface?</li>
+					</ol>
+				<!-- </div> -->
+			<!-- </div> -->
 
 			<br>
 			<h3>Navigation Analysis + Simplification</h3>
@@ -200,22 +208,22 @@
 			<p>Benchmarks for testing were created based on the project’s usability goals: </p>
 			<ol>
 				<li><strong>Simplified process</strong> (quantitative)
-					<ol>
+					<ul>
 						<li>Time: all users must take less than 2 minutes to add a course</li>
 						<li>Number of steps/clicks: must not be more than the current system</li>
-					</ol>
+					</ul>
 				</li>
 				<li><strong>Less confusing</strong> (quantitative)
-					<ol>
+					<ul>
 						<li>Errors: all users should only make a maximum of one navigation error</li>
-					</ol>
+					</ul>
 				</li>
 				<li><strong>Satisfaction</strong> (qualitative)
-					<ol>
+					<ul>
 						<li>All users must prefer the new interface over the old one</li>
 						<li>The new interface should get better scores than the original Quest survey when it comes to aspects that are liked/disliked</li>
 						<li>Task satisfaction should be ranked 4 or 5 by all users (on a 5-point scale)</li>
-					</ol>
+					</ul>
 				</li>
 			</ol>
 			<p>Three primary users were recruited for this testing, which involved giving them the prototype and asking them to add the fictional course “SYDE 999” to their Spring 2022 term. Metrics like task timing and error counting were collected, as well as satisfaction ratings in a follow-up survey. In general, users performed well on the tasks, and seemed to enjoy using the interface. The follow-up survey revealed that no aspects of the new interface were disliked, and that all users preferred the new interface to the old one. Overall, the prototype passed all of the set benchmarks.</p>

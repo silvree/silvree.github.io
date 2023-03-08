@@ -56,6 +56,10 @@ p {
 	font-size: 18px;
 }
 
+p > strong {
+	font-weight: 500;
+}
+
 a {
     color: #6dbcac;
 }
@@ -218,6 +222,11 @@ img {
     margin: 0 0 0 0;
 	max-width: 100%;
 	height: auto;
+}
+
+.img-card {
+	max-height: 100px;
+	width: auto;
 }
 
 /* .article-thumb {
