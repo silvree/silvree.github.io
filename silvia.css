@@ -224,6 +224,19 @@ img {
 	height: auto;
 }
 
+.img-list {
+    margin: 0 0 0 0;
+	max-height: 30rem;
+	max-width: 100%;
+}
+
+.img-holder {
+	padding-left: 1rem;
+	padding-bottom: 3rem;
+	display: flex;
+	justify-content: center;
+}
+
 .img-card {
 	max-height: 100px;
 	width: auto;
